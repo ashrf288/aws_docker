@@ -27,7 +27,7 @@
     + `type: "custom tcp" (port 8001) source (anywhere IPV4)`
          port number should be the same port you specified in your docker-compose file
     + `type: "http" (port 80) source (anywhere IPV4)`
-    + `type: "ssh" (port 443) source (my IP)`
+    + `type: "ssh" (port 22) source (anywhere IPV4)`
          this to help you connect with your instance via ssh so for security reasons you should add your ip address only.
 
 once your done your security group should look like this:
@@ -88,6 +88,8 @@ click on "instances" on the left side of the dashboard
 **from now on all the steps will be executed on the terminal**
 
 
+**if you dont want to use sudo for every command then run `sudo su`**
+
 # install docker
 
     ```
@@ -120,7 +122,7 @@ click on "instances" on the left side of the dashboard
         sudo docker-compose build && sudo docker-compose up
     ```
 
-if you dont want to use sudo for every command then run `sudo su`
+
 
 
 #### run django commands for that image 
