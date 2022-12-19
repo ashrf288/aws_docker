@@ -1,7 +1,9 @@
 # deploy your docker container to the cloud (aws ec2)
 
 1- create a aws account
+
 2- log in to your aws console
+
 3- select EC2 service from the list of services
 
 ![aws console](./assets/aws_console.png)
