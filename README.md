@@ -1,4 +1,4 @@
-# deploy your docker container to the cloud (aws ec2)
+# create aws account
 
 1- create  aws account if you dont have one
 
@@ -17,7 +17,7 @@
 ![security groups](./assets/ec2_network.png)
 
 
-## 1. create a security group
+# create a security group
 
 + click on "security groups"
 + click on "create security group"
@@ -50,7 +50,7 @@ click on "instances" on the left side of the dashboard
 
 
 
-## 2. create a new ec2 instance
+# create a new ec2 instance
 
 + click on `launch instance`
 + for names and tags section: give it a name (e.g. "myDockerInstance")
@@ -72,7 +72,7 @@ click on "instances" on the left side of the dashboard
 
 
 
-## 3. connect to the instance 
+# connect to the instance 
 
 + click on `instances` from the left side of the dashboard
 + select the instance you just created (ex: myDockerInstance) click on `actions` and then click on `connect`
@@ -88,7 +88,7 @@ click on "instances" on the left side of the dashboard
 **from now on all the steps will be executed on the terminal**
 
 
-## 4. install docker
+# install docker
 
     ```
         sudo apt-get update
@@ -106,14 +106,14 @@ click on "instances" on the left side of the dashboard
         sudo chmod +x /usr/local/bin/docker-compose
     ```
 
-## 5. clone your repository
+# clone your repository
 
     ```
         git clone <REPO LINK >
 
     ```
 
-## 6. run your docker container
+# run your docker container
 
     ```
         cd <REPO NAME>
@@ -137,7 +137,7 @@ or `docker-compose run --rm web bash` and now your in the docker terminal and yo
         python manage.py makemigrations
         python manage.py migrate
     ```
-## 7. open your app in the browser
+##  open your app in the browser
 
 
 
