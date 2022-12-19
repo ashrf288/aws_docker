@@ -169,4 +169,16 @@ e.g. < public_ip >:8001
 
 ## important note 
 
-if you stop your instance and start it again the public ip address will change 
++ if you stop your instance and start it again the public ip address will change 
+
++ you can upload the repo directly from your local machine to the instance by using `scp` command
+
+
+        `scp -i <KEY PAIR NAME> -r <REPO NAME> <USER NAME>@<PUBLIC IP>:<PATH TO THE REPO>`
+  
+example: 
+
+`scp -i ec2_deployer.pem -r redux-demo ubuntu@ec2-54-166-28-0.compute-1.amazonaws.com:~/home/ubuntu`
+
+this will upload a file called `redux-demo` to the home directory of the user `ubuntu` on the instance
+
