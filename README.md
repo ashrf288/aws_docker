@@ -1,6 +1,6 @@
 # deploy your docker container to the cloud (aws ec2)
 
-1- create a aws account
+1- create  aws account if you dont have one
 
 2- log in to your aws console
 
