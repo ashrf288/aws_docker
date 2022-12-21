@@ -167,6 +167,18 @@ e.g. < public_ip >:8001
 
 
 
+
+
+
+
+
+
+
+## after deployment
+
++ [netlfiy redirect](/netlify_redierect.md)
+
+
 ## important note 
 
 + if you stop your instance and start it again the public ip address will change 
@@ -179,6 +191,7 @@ e.g. < public_ip >:8001
         
 where:
 
+```
 scp => secure copy
 
 -i <path to file.pem> => the path to the file that contains the key pair you created when you created the instance 
@@ -186,6 +199,7 @@ scp => secure copy
 <path-to-file> => the path to the file/directory you want to upload to the instance
 
 <username>@<public IP>; => the username and the public ip address of the instance and what comes after the : is the path to the directory you want to upload the file to
+```
 
 
 
@@ -201,9 +215,3 @@ scp -i ec2_deployer.pem -r redux-demo ubuntu@ec2-54-166-28-0.compute-1.amazonaws
 this will use the security key `ec2_deployer.pem` to upload the `redux-demo` directory to the home directory of the instance with the public ip address 
 
 `ec2-54-166-28-0.compute-1.amazonaws.com`
-
-
-
-## after deployment
-
-+ [netlfiy redirect](/netlify_redierect.md)
