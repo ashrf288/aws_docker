@@ -1,4 +1,4 @@
-# 
+ 
 ## create aws account
 
 1- create  aws account if you dont have one
@@ -111,35 +111,37 @@ click on "instances" on the left side of the dashboard
 
 ## clone your repository
 
-    ```
-        git clone <REPO LINK >
+```
+    git clone <REPO LINK >
 
-    ```
+```
+
 
 ## run your docker container
 
-    ```
-        cd <REPO NAME>
-        sudo docker-compose build && sudo docker-compose up
-    ```
+
+```
+    cd <REPO NAME>
+    sudo docker-compose build && sudo docker-compose up
+```
 
 
 
 
 #### run django commands for that image 
 
-    ```
-        sudo docker-compose exec web python manage.py makemigrations
-        sudo docker-compose exec web python manage.py migrate
-    ```
+```
+    sudo docker-compose exec web python manage.py makemigrations
+    sudo docker-compose exec web python manage.py migrate
+```
 
 or `docker-compose run --rm web bash` and now your in the docker terminal and you can run django commands normally
 
 
-    ``` 
-        python manage.py makemigrations
-        python manage.py migrate
-    ```
+``` 
+    python manage.py makemigrations
+    python manage.py migrate
+```
 ##  open your app in the browser
 
 
@@ -188,7 +190,7 @@ e.g. < public_ip >:8001
 + you can upload the repo directly from your local machine to the instance by using `scp` command
 
 
-        `scp -i </path/to/whatever.pem> <path-to-file> <username>@<public IP>:~ <PATH> `
+`scp -i </path/to/whatever.pem> <path-to-file> <username>@<public IP>:~ <PATH> `
 
         
 where:
