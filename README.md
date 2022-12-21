@@ -178,6 +178,8 @@ e.g. < public_ip >:8001
 
 + [netlfiy redirect](/netlify_redierect.md)
 
++ [ec2_front_end_deploy](/ec2_deploy.md)
+
 
 ## important note 
 
