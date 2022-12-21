@@ -192,10 +192,15 @@ scp => secure copy
   
 example: 
 
-`scp -i ec2_deployer.pem -r redux-demo ubuntu@ec2-54-166-28-0.compute-1.amazonaws.com:~`
+```
+scp -i ec2_deployer.pem -r redux-demo ubuntu@ec2-54-166-28-0.compute-1.amazonaws.com:~
 
-this will use the security key `ec2_deployer.pem` to upload the `redux-demo` directory to the home directory of the instance with the public ip address `ec2-54-166-28-0.compute-1.amazonaws.com`
 
+
+```
+this will use the security key `ec2_deployer.pem` to upload the `redux-demo` directory to the home directory of the instance with the public ip address 
+
+`ec2-54-166-28-0.compute-1.amazonaws.com`
 
 
 
