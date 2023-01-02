@@ -1,1 +1,7 @@
 remote_theme: pages-themes/architect@v0.2.0
+title: Deploy to Amazon Ec2 Service
+contributors:
+  - name: "Ashrf Obeidat"
+    url: ""
+  - name: "Ahmad Swedani"
+    url: "https://github.com/ahmad-swedani"
