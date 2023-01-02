@@ -33,15 +33,21 @@
 
 once your done your security group should look like this:
 
-![image of inbound rules](./assets/inboud_rules.png)
+![image of inbound rules](./assets/inboud_rules1.png)
 
 + leave the rest as default and click on "create security group"
 
-+ click on "create security group"
++ you will be directed to the security group page
 
-![image of security group](./assets/secutrity_group.png)
+![security_group](./assets/created_sec.png)
+
+note the security group name and the inbound rules section
 
 + if everything is ok you should see your security group in the list of security groups
+
++ click on the security groups section on the left side of the dashboard
+
+![security groups](./assets/ec2_network.png)
 
 **now we are ready to create our ec2 instance**
 
@@ -50,17 +56,31 @@ click on "instances" on the left side of the dashboard
 ![image of instances](./assets/security_gruop_secuss.png)
 
 
++ you will see a list with all the security groups you created
+
+![security group list](./assets/sec_group_list.png)
+
+
+**🎉🎉 awasome now we are ready to create our ec2 instance🎉🎉**
 
 ## create a new ec2 instance
 
++ on the left side of the dashboard click on `instances`
+
+![image of instances](./assets/instances_menu.png)
+
 + click on `launch instance`
+
+![image of launch instance](./assets/lunch_instance.png)
 + for names and tags section: give it a name (e.g. "myDockerInstance")
 
 + for the application and os section: choose `ubuntu` os
 
-![](./assets/ec2_os.png)
 
 + choose `t2.micro` as the instance type (its usually the default one)
+
+![](./assets/ec2_os.png)
+
 + key pair: create a new key pair this will be used to connect to the instance via ssh (you will download a file with the key pair name you specified)
 
 ![](./assets/key_pair.png)

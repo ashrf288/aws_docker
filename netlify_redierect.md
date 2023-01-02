@@ -1,4 +1,4 @@
-# redierct netlify 
+# redirect netlify  
 
 
 after you have seccessfully deployed your server on the `EC2` you might have noticed that the url is not secure (http not https).
@@ -77,3 +77,9 @@ ex:
 
 now every request that starts with `/api/` will be redirected to the server ip address and port.
 
+
+
+
+
+
+      
